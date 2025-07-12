@@ -217,6 +217,8 @@ body {
     align-items: center;
     gap: 2rem;
     margin: 2rem 0;
+    overflow-y: auto;
+    max-height: 80vh;
 }
 
 .final-preview {
@@ -247,10 +249,11 @@ body {
 
 .format-buttons {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: .2rem;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 /* Success Screen */
@@ -336,8 +339,8 @@ body {
     }
     
     .final-preview {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
     
     .format-buttons {
