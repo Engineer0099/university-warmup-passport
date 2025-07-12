@@ -87,10 +87,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             };
             
-            reader.readAsDataURL(e.target.files[0]);
+            reader.readAsDataURL(e.target.files[0]); 
+            document.getElementById('upload-area').classList.remove('hidden');
+
         }
     });
-    
+
     // Drag and drop functionality
     uploadArea.addEventListener('dragover', (e) => {
         e.preventDefault();
@@ -292,6 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     lottie.play();
                 }
             }
+                document.getElementById('upload-area').classList.remove('hidden');
         });
     }
     
