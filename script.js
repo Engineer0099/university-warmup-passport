@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
         lottie.loadAnimation({
             container: successAnimation,
             renderer: 'svg',
-            loop: false,
+            loop: true,
             autoplay: false,
-            path: 'assets/success-animation.json'
+            path: 'assets/C.json',
         });
     }
     
@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 imagePreview.src = event.target.result;
                 previewContainer.classList.remove('hidden');
                 uploadNextButton.classList.remove('hidden');
+                document.getElementById('upload-area').classList.add('hidden');
                 
                 // Update crop image preview
                 cropImage.src = event.target.result;
